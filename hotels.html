@@ -12,30 +12,33 @@
         </a>
         <ul class="site-navigation">
           <li><a href="index.html">Информация</a></li>
-          <li><a href="multimedia.html">Фото и видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main class="container">
       <h1 class="visually-hidden">Подбор жилья в Седоне</h1>
-      <section class="filter">
-        <h2 class="visually-hidden">Фильтр жилья</h2>
-        <!--форма-->
-        <span class="filter-title">Инфраструктура:</span>
+      <!--форма-->
+      <fieldset class="filter">
+        <legend class="filter-title">Инфраструктура:</legend>
         <ul>
           <li>Бассейн</li>
           <li>Парковка</li>
           <li>Wi-fi</li>
         </ul>
-        <span class="filter-title">Тип жилья:</span>
+      </fieldset>
+      <fieldset>
+        <legend class="filter-title">Тип жилья:</legend>
         <ul>
           <li>Гостиница</li>
           <li>Мотель</li>
           <li>Апартаменты</li>
         </ul>
-        <span class="filter-title">Стомость сутки (р):</span>
+      </fieldset>
+      <fieldset>
+        <legend class="filter-title">Стомость сутки (р):</legend>
         <div class="filter-input">
           <div class="filter-input-min">От 0</div>
           <div class="filter-input-max">До 3000</div>
@@ -50,9 +53,8 @@
           </div>
         </div>
         <span class="button filter-button">Показать</span>
-      </section>
-      <section class="sorting">
-        <h2 class="visually-hidden">Сортировка жилья</h2>
+      </fieldset>
+      <div class="sorting">
         <b class="sorting-info">Найдено: 3</b>
         <span class="sorting-title">Сортировка:</span>
         <ul>
@@ -62,13 +64,15 @@
           <li><a class="sorting-marker sorting-marker-up" href="#"></a></li>
           <li><a class="sorting-marker sorting-marker-down sorting-marker-current" href="#"></a></li>
         </ul>
-      </section>
+      </div>
       <section class="catalog">
         <h2 class="visually-hidden">Список жилья по запросу</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <a class="catalog-item-image" href="catalog-item.html">
+            <a class="catalog-item-image" href="#">
               <img src="img/hotels.jpg" width="100" height="100" alt="Гостиница">
+            </a>
+            <a class="catalog-item-title" href="#">
               <h3>Amara resort & spa</h3>
             </a>
             <b class="catalog-category">Гостиница</b>
@@ -79,8 +83,10 @@
             <b class="catalog-rating">Рейтинг: 8,5</b>
           </li>
           <li class="catalog-item">
-            <a class="catalog-item-image" href="catalog-item.html">
+            <a class="catalog-item-image" href="#">
               <img src="img/motels.jpg" width="100" height="100" alt="Мотель">
+            </a>
+            <a class="catalog-item-title" href="#">
               <h3>Desert quail inn</h3>
             </a>
             <b class="catalog-category">Мотель</b>
@@ -91,8 +97,10 @@
             <b class="catalog-rating">Рейтинг: 8,9</b>
           </li>
           <li class="catalog-item">
-            <a class="catalog-item-image" href="catalog-item.html">
+            <a class="catalog-item-image" href="#">
               <img src="img/aparts.jpg" width="100" height="100" alt="Апартаменты">
+            </a>
+            <a class="catalog-item-title" href="#">
               <h3>Villas at Poco Diablo</h3>
             </a>
             <b class="catalog-category">Апартаменты</b>
