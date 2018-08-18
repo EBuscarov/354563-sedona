@@ -20,40 +20,86 @@
     </header>
     <main class="container">
       <h1 class="visually-hidden">Подбор жилья в Седоне</h1>
-      <!--форма-->
-      <fieldset class="filter">
-        <legend class="filter-title">Инфраструктура:</legend>
-        <ul>
-          <li>Бассейн</li>
-          <li>Парковка</li>
-          <li>Wi-fi</li>
-        </ul>
-      </fieldset>
-      <fieldset>
-        <legend class="filter-title">Тип жилья:</legend>
-        <ul>
-          <li>Гостиница</li>
-          <li>Мотель</li>
-          <li>Апартаменты</li>
-        </ul>
-      </fieldset>
-      <fieldset>
-        <legend class="filter-title">Стомость сутки (р):</legend>
-        <div class="filter-input">
-          <div class="filter-input-min">От 0</div>
-          <div class="filter-input-max">До 3000</div>
-        </div>
-        <div class="filter-roller">
-          <div class="filter-roller-inner">
-            <div class="filter-handle filter-handle-min"></div>
-            <div class="filter-handle filter-handle-max"></div>
-            <div class="wraper">
-              <div class="filter-item-line"></div>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр гостиниц</h2>
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="filter">
+            <legend class="filter-title">Инфраструктура:</legend>
+            <ul>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" checked>
+                  <span class="checked-indicator-on"></span>
+                  Бассейн
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking">
+                  <span class="checked-indicator-off"></span>
+                  Парковка
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" checked>
+                  <span class="checked-indicator-on"></span>
+                  Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="filter-title">Тип жилья:</legend>
+            <ul>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" checked>
+                  <span class="checked-indicator-on"></span>
+                  Гостиница
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" checked>
+                  <span class="checked-indicator-on"></span>
+                  Мотель
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" checked>
+                  <span class="checked-indicator-on"></span>
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-value">
+            <legend class="filter-title">Стомость сутки (р):</legend>
+            <div class="filter-section">
+              <p class="filter-item">
+                <label for="min-value">От</label>
+                <input id="min-value" type="text" name="min" value="" placeholder="0">
+              </p>
+              <p class="filter-item">
+                <label for="max-value">До</label>
+                <input id="max-value" type="text" name="max" value="" placeholder="3000">
+              </p>
             </div>
-          </div>
-        </div>
-        <span class="button filter-button">Показать</span>
-      </fieldset>
+            <div class="filter-roller">
+              <div class="filter-roller-inner">
+                <div class="filter-handle filter-handle-min"></div>
+                <div class="filter-handle filter-handle-max"></div>
+                <div class="wraper">
+                  <div class="filter-item-line"></div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <button class="button filter-button" type="submit">Показать</button>
+        </form>
+      </section>
       <div class="sorting">
         <b class="sorting-info">Найдено: 3</b>
         <span class="sorting-title">Сортировка:</span>
