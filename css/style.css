@@ -1,0 +1,272 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", "Arial", "sans-serif";
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-image: url("../img/background-index.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+/*--Каталог - внутренняя страница--*/
+.inner-page {
+  background-image: url("../img/background-filter.jpg");
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  border: none;
+}
+
+.button:hover {
+  background-color: #604e43;
+}
+
+.button:active {
+  color: #818181;
+
+  background-color: #503e33;
+}
+
+/*-- Навигация --*/
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  opacity: 0.3;
+}
+
+/*--Навигация на внутренней странице--*/
+li .site-navigation-current {
+  color: #766357;
+}
+
+.main-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.feature-item {
+  text-align: center;
+  list-style: none;
+}
+
+.feature-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.feature-item-wide {
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.feature-item-wide h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.advantage-item {
+  list-style: none;
+}
+
+.advantage-icon-1 {
+  background-image: url("../img/icon-1.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.advantage-icon-2 {
+  background-image: url("../img/icon-2.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.advantage-icon-3 {
+  background-image: url("../img/icon-3.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.hotels-search {
+  text-align: center;
+}
+
+.hotels-search b {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.search-intro {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.search-button {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+
+  background-color: #766357;
+}
+
+.search-item {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.search-item input {
+  font: inherit;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+}
+
+.search-item input:hover {
+  background-color: #ebebeb;
+}
+
+.search-item input:active {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.calendar-icon {
+  background-image: url("../img/calendar.svg");
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.less-button,
+.more-button {
+  color: #818181;
+
+  background-color: #f2f2f2;
+}
+
+.less-button:hover,
+.more-button:hover {
+  color: #000000;
+
+  background-color: #f2f2f2;
+}
+
+.less-button:active,
+.more-button:active {
+  color: #81b3d2;
+
+  background-color: #f2f2f2;
+}
+
+.find-button {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+
+  background-color: #81b3d2;
+}
+
+.find-button:hover {
+  background-color: #669ec0;
+}
+
+.find-button:active {
+  color: #818181;
+
+  background-color: #5496bd;
+}
+
+.main-footer {
+  text-align: center;
+}
+
+.footer-hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.twitter-button {
+  background-image: url("../img/twitter.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.facebook-button {
+  background-image: url("../img/facebook.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.youtube-button {
+  background-image: url("../img/youtube.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.copyright-button {
+  background-color: #000000;
+  background-image: url("../img/htmlacademy.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}

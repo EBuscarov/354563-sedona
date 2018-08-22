@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -19,7 +22,7 @@
       </nav>
     </header>
     <main class="container">
-      <h1>Sedona</h1>
+      <h1 class="visually-hidden">Sedona</h1>
       <p class="main-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -33,15 +36,15 @@
           </li>
           <li class="feature-item">
             <ul class="advantages-list">
-              <li class="advantage-item advantage-item-icon">
+              <li class="advantage-item advantage-icon-1">
                 <h3>Жильё</h3>
                 <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="advantage-item advantage-item-icon">
+              <li class="advantage-item advantage-icon-2">
                 <h3>Еда</h3>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li class="advantage-item advantage-item-icon">
+              <li class="advantage-item advantage-icon-3">
                 <h3>Сувениры</h3>
                 <p>Не только китайского, но и местного производства!</p>
               </li>
@@ -73,7 +76,7 @@
       <section class="hotels-search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <b>Заинтересовались?</b>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="search-intro">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="button search-button">Поиск гостиницы в Седоне</button>
         <div class="modal modal-search-form">
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
@@ -88,14 +91,14 @@
             <p class="search-item">
               <label for="aduls">Взрослые:</label>
               <input  class="search-" id="aduls" type="number" name="aduls" value="" min="0" placeholder="2">
-              <button class="visually-hidden button button-less" type="submit">Меньше</button>
-              <button class="visually-hidden button button-more" type="submit">Больше</button>
+              <button class="button less-button" type="submit">-</button>
+              <button class="button more-button" type="submit">+</button>
             </p>
             <p class="search-item">
               <label for="childrens">Дети:</label>
               <input  class="" id="childrens" type="number" name="children" value="" min="0" placeholder="0">
-              <button class="visually-hidden button button-less" type="submit">Меньше</button>
-              <button class="visually-hidden button button-more" type="submit">Больше</button>
+              <button class="button less-button" type="submit">-</button>
+              <button class="button more-button" type="submit">+</button>
             </p>
             <button class="button find-button" type="submit">Найти</button>
           </form>
@@ -109,12 +112,12 @@
       <p class="footer-hashtag container">#visitsedona</p>
       <div class="footer-social container">
         <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Youtube</a></li>
+          <li><a class="visually-hidden social-button twitter-button" href="#">Twitter</a></li>
+          <li><a class="visually-hidden social-button facebook-button" href="#">Фейсбук</a></li>
+          <li><a class="visually-hidden social-button youtube-button" href="#">Youtube</a></li>
         </ul>
       </div>
-      <div class="copyright container">
+      <div class="footer-copyright container">
         <a class="copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </div>
     </footer>
