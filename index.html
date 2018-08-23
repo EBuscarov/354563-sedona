@@ -7,7 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="main-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
@@ -82,11 +82,13 @@
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
             <p class="search-item">
               <label for="arrival-date">Дата заезда:</label>
-              <input class="calendar-icon" id="arrival-date" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
+              <input id="arrival-date" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
+              <button class="visually-hidden button calendar-icon" type="submit">Календарь</button>
             </p>
             <p class="search-item">
               <label for="departure-date">Дата выезда:</label>
-              <input  class="calendar-icon" id="departure-date" type="text" name="departure-date" value="" placeholder="4 июля 2017">
+              <input id="departure-date" type="text" name="departure-date" value="" placeholder="4 июля 2017">
+              <button class="visually-hidden button calendar-icon" type="submit">Календарь</button>
             </p>
             <p class="search-item">
               <label for="aduls">Взрослые:</label>
@@ -109,16 +111,25 @@
       </div>
     </main>
     <footer class="main-footer">
-      <p class="footer-hashtag container">#visitsedona</p>
+      <p class="footer-hashtag container">#visitsedona</p
       <div class="footer-social container">
-        <ul>
-          <li><a class="visually-hidden social-button twitter-button" href="#">Twitter</a></li>
-          <li><a class="visually-hidden social-button facebook-button" href="#">Фейсбук</a></li>
-          <li><a class="visually-hidden social-button youtube-button" href="#">Youtube</a></li>
+        <ul class="social-list">
+          <li>
+            <a class="visually-hidden button social-button twitter-button" href="#">Twitter</a>
+          </li>
+          <li>
+            <a class="visually-hidden button social-button facebook-button" href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a class="visually-hidden button social-button youtube-button" href="#">Youtube</a>
+          </li>
         </ul>
       </div>
       <div class="footer-copyright container">
-        <a class="copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <p>
+          website by
+          <a class="visually-hidden button copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        </p>
       </div>
     </footer>
   </body>

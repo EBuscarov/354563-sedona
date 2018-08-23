@@ -23,10 +23,11 @@
     </header>
     <main class="container">
       <h1 class="visually-hidden">Подбор жилья в Седоне</h1>
+
       <section class="filters">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
-        <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="filter">
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
             <legend class="filter-title">Инфраструктура:</legend>
             <ul>
               <li class="filter-option">
@@ -108,8 +109,8 @@
             </a>
             <b class="catalog-category">Гостиница</b>
             <b class="catalog-price">От 4000 р.</b>
-            <a class="button button-catalog" href="#">Подробнее</a>
-            <a class="button button-booking" href="#">Забронировать</a>
+            <a class="button moreinfo-button" href="#">Подробнее</a>
+            <a class="button booking-button" href="#">Забронировать</a>
             <div class="catalog-star"></div>
             <b class="catalog-rating">Рейтинг: 8,5</b>
           </li>
@@ -122,8 +123,8 @@
             </a>
             <b class="catalog-category">Мотель</b>
             <b class="catalog-price">От 3000 р.</b>
-            <a class="button button-catalog" href="#">Подробнее</a>
-            <a class="button button-booking" href="#">Забронировать</a>
+            <a class="button moreinfo-button" href="#">Подробнее</a>
+            <a class="button booking-button" href="#">Забронировать</a>
             <div class="catalog-star"></div>
             <b class="catalog-rating">Рейтинг: 8,9</b>
           </li>
@@ -136,8 +137,8 @@
             </a>
             <b class="catalog-category">Апартаменты</b>
             <b class="catalog-price">От 4000 р.</b>
-            <a class="button button-catalog" href="#">Подробнее</a>
-            <a class="button button-booking" href="#">Забронировать</a>
+            <a class="button moreinfo-button" href="#">Подробнее</a>
+            <a class="button booking-button" href="#">Забронировать</a>
             <div class="catalog-star"></div>
             <b class="catalog-rating">Рейтинг: 9,2</b>
           </li>
@@ -145,16 +146,25 @@
       </section>
     </main>
     <footer class="main-footer">
-      <p class="footer-hashtag container">#visitsedona</p>
+      <p class="footer-hashtag container">#visitsedona</p
       <div class="footer-social container">
-        <ul>
-          <li><a class="visually-hidden social-button twitter-button" href="#">Twitter</a></li>
-          <li><a class="visually-hidden social-button facebook-button" href="#">Фейсбук</a></li>
-          <li><a class="visually-hidden social-button youtube-button" href="#">Youtube</a></li>
+        <ul class="social-list">
+          <li>
+            <a class="visually-hidden button social-button twitter-button" href="#">Twitter</a>
+          </li>
+          <li>
+            <a class="visually-hidden button social-button facebook-button" href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a class="visually-hidden button social-button youtube-button" href="#">Youtube</a>
+          </li>
         </ul>
       </div>
       <div class="footer-copyright container">
-        <a class="copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <p>
+          website by
+          <a class="visually-hidden button copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        </p>
       </div>
     </footer>
   </body>
