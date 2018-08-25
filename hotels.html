@@ -66,11 +66,11 @@
             <div class="filter-section">
               <p class="filter-item">
                 <label for="min-value">От</label>
-                <input id="min-value" type="text" name="min" value="" placeholder="0">
+                <input id="min-value" type="text" name="min" placeholder="0">
               </p>
               <p class="filter-item">
                 <label for="max-value">До</label>
-                <input id="max-value" type="text" name="max" value="" placeholder="3000">
+                <input id="max-value" type="text" name="max" placeholder="3000">
               </p>
             </div>
             <div class="filter-roller">
@@ -88,14 +88,16 @@
       </section>
       <div class="sorting">
         <b class="sorting-info">Найдено: 3</b>
-        <span class="sorting-title">Сортировка:</span>
-        <ul>
-          <li><a class="sorting-marker active">По цене</a></li>
-          <li><a class="sorting-marker" href="#">По типу</a></li>
-          <li><a class="sorting-marker" href="#">По рейтингу</a></li>
-          <li><a class="sorting-marker sorting-marker-up" href="#"></a></li>
-          <li><a class="sorting-marker sorting-marker-down sorting-marker-current" href="#"></a></li>
-        </ul>
+        <fieldset class="sorting-value">
+          <legend class="sorting-title">Сортировка:</legend>
+          <ul>
+            <li><a class="sorting-marker sorting-marker-current">По цене</a></li>
+            <li><a class="sorting-marker" href="#">По типу</a></li>
+            <li><a class="sorting-marker" href="#">По рейтингу</a></li>
+            <li><a class="sorting-marker sorting-marker-up" href="#"></a></li>
+            <li><a class="sorting-marker sorting-marker-down sorting-marker-current" href="#"></a></li>
+          </ul>
+        </fieldset>
       </div>
       <section class="catalog">
         <h2 class="visually-hidden">Список жилья по запросу</h2>

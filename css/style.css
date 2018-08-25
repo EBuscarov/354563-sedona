@@ -185,7 +185,8 @@ li .site-navigation-current {
   background-image: url("../img/calendar.svg");
   background-position: center right;
   background-repeat: no-repeat;
-  fill: red;
+
+  fill: #cacaca;
 }
 
 .calendar-icon:hover {
@@ -263,8 +264,12 @@ li .site-navigation-current {
   list-style: none;
 }
 
-.filter-item input {
-  font: inherit;
+.filter-item input::-webkit-input-placeholder,
+.filter-item input::-moz-placeholder {
+  font-size: 24px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
 
   background-color: transparent;
   border: 2px solid #ffffff;
@@ -281,6 +286,34 @@ li .site-navigation-current {
   background-color: #ffffff;
   border: 2px solid #ffffff;
 }
+
+.sorting {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.sorting fieldset {
+  border: none;
+}
+
+.sorting ul {
+  list-style: none;
+}
+
+.sorting-info {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.sorting-marker-current {
+  text-decoration: overline;
+}
+
+
+
+
 
 .moreinfo-button {
   font-size: 14px;
