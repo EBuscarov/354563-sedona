@@ -16,6 +16,14 @@ a {
     text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .button {
   font: inherit;
   text-align: center;
@@ -70,7 +78,7 @@ a {
 }
 
 /*--Навигация на внутренней странице--*/
-li .site-navigation-current {
+.site-navigation .site-navigation-current {
   color: #766357;
 }
 
