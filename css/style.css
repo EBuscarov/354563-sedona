@@ -181,20 +181,21 @@ li .site-navigation-current {
 }
 
 .calendar-icon {
-  background-color: #f2f2f2;
-  background-image: url("../img/calendar.svg");
+  background-color: transparent;
+  /*background-image: url("../img/calendar.svg");
   background-position: center right;
-  background-repeat: no-repeat;
-
+  background-repeat: no-repeat;*/
   fill: #cacaca;
 }
 
 .calendar-icon:hover {
-  background-color: #ebebeb;
+  background-color: transparent;
+  fill: #000000;
 }
 
 .calendar-icon:active {
-  background-color: #ffffff;
+  background-color: transparent;
+  fill: #81b3d2;
 }
 
 .less-button,
@@ -264,15 +265,13 @@ li .site-navigation-current {
   list-style: none;
 }
 
-.filter-item input::-webkit-input-placeholder,
-.filter-item input::-moz-placeholder {
-  font-size: 24px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #ffffff;
-
+.filter-item input {
   background-color: transparent;
   border: 2px solid #ffffff;
+}
+
+.filter-item input::placeholder {
+  color: #ffffff;
 }
 
 .filter-button {
@@ -307,13 +306,55 @@ li .site-navigation-current {
   font-weight: 700;
 }
 
-.sorting-marker-current {
-  text-decoration: overline;
+.sorting a {
+  color: #818181;
+  border-bottom: 1px dashed #81b3d2;
 }
 
+.sorting a:hover {
+  color: #81b3d2;
+  border-bottom: 1px dashed #81b3d2;
+}
 
+.sorting a:active {
+  color: #000000;
+  border: none;
+}
 
+.sorting .sorting-marker-current {
+  color: #81b3d2;
+  border: none;
+}
 
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item-title h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.catalog-item-title h3:hover {
+  color: #81b3d2;
+}
+
+.catalog-item-title h3:active {
+  color: #818181;
+}
+
+.catalog-category,
+.catalog-price {
+  font-weight: 400;
+}
+
+.catalog-rating {
+  font-weight: 400;
+
+  background-color: #f2f2f2;
+}
 
 .moreinfo-button {
   font-size: 14px;
@@ -369,22 +410,26 @@ li .site-navigation-current {
   list-style: none;
 }
 
-.social-button {
+.social-button svg{
   color: #ffffff;
 
   background-color: #81b3d2;
+  fill: #ffffff;
 }
 
-.social-button:hover {
+.social-button:hover svg{
   background-color: #669ec0;
 }
 
-.social-button:active {
+.social-button:active svg{
   color: #818181;
 
   background-color: #5496bd;
+  fill: #818181;
 }
 
+
+/*
 .twitter-button {
   background-image: url("../img/twitter.svg");
   background-position: center;
@@ -402,6 +447,7 @@ li .site-navigation-current {
   background-position: center;
   background-repeat: no-repeat;
 }
+*/
 
 .footer-copyright p {
   font-size: 14px;
@@ -410,26 +456,14 @@ li .site-navigation-current {
   color: #000000;
 }
 
-.copyright-button {
-  background-color: #ffffff;
-  background-image: url("../img/htmlacademy.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+.copyright-button svg {
   fill: #231f20;
 }
 
-.copyright-button:hover {
-  background-color: #ffffff;
-  background-image: url("../img/htmlacademy.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+.copyright-button svg:hover {
   fill: #81b3d2;
 }
 
-.copyright-button:active {
-  background-color: #ffffff;
-  background-image: url("../img/htmlacademy.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+.copyright-button svg:active {
   fill: #bdbbbc;
 }
