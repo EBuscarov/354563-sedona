@@ -45,6 +45,8 @@ a {
 }
 
 .main-page {
+
+
   background-image: url("../img/background-index.jpg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -87,8 +89,13 @@ a {
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+  text-align: center;
 
   background-color: #ffffff;
+}
+
+.feature-title {
+  text-align: center;
 }
 
 .feature-item {
@@ -474,4 +481,96 @@ a {
 
 .copyright-button svg:active {
   fill: #bdbbbc;
+}
+
+/*---Сеточные стили---*/
+
+.main-header {
+  width: 1200px;
+  min-height: 56px;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 570px;
+}
+
+.main-header-logo {
+  order: 1;
+  width: 140px;
+  height: 72px;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  border: 2px solid green;
+}
+
+.main-title {
+  width: 576px;
+  margin-top: 0;
+  margin-bottom: 33px;
+}
+
+.feature-title {
+  width: 576px;
+  margin-bottom: 51px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
+  margin: 0;
+  border: 2px solid blue;
+}
+
+ .feature-promo {
+   width: 304px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+.feature-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 400px;
+
+  border: 2px solid brown;
+}
+
+.feature-img {
+  list-style: none;
+}
+
+.feature-item-wide {
+
+  width: 400px;
+  height: 256px;
+
+}
+
+.advantage-item {
+  width: 400px;
+  border: 2px solid grey;
 }
