@@ -534,7 +534,6 @@ a {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
-  border: 1px solid green;
 }
 
 .main-title {
@@ -595,17 +594,26 @@ a {
   height: 256px;
 }
 
-.filters {
+.filter {
   display: flex;
   flex-direction: row;
-  border: 1px solid red;
+  min-height: 215px;
 }
 
-.filter-value {
-  border: 1px solid red;
+.sorting {
+  display: flex;
+  flex-direction: row;
 }
 
+.catalog-list {
+  display: flex;
+  flex-direction: column;
+}
 
+.catalog-item {
+  display: flex;
+  flex-direction: row;
+}
 
 .main-footer {
   display: flex;

@@ -23,10 +23,10 @@
     </header>
     <main class="container">
       <h1 class="visually-hidden">Подбор жилья в Седоне</h1>
-
       <section class="filters">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+        <div class="wrapper">
           <fieldset>
             <legend class="filter-title">Инфраструктура:</legend>
             <ul>
@@ -44,6 +44,8 @@
               </li>
             </ul>
           </fieldset>
+        </div>
+        <div class="wrapper">
           <fieldset>
             <legend class="filter-title">Тип жилья:</legend>
             <ul>
@@ -61,6 +63,8 @@
               </li>
             </ul>
           </fieldset>
+        </div>
+        <div class="wrapper">
           <fieldset class="filter-value">
             <legend class="filter-title">Стомость сутки (р):</legend>
             <div class="filter-section">
@@ -84,28 +88,36 @@
             </div>
           </fieldset>
           <button class="button filter-button" type="submit">Показать</button>
+          </div>
         </form>
       </section>
       <div class="sorting">
-        <b class="sorting-info">Найдено: 3</b>
-        <fieldset class="sorting-value">
-          <legend class="sorting-title">Сортировка:</legend>
-          <ul>
-            <li><a class="sorting-marker sorting-marker-current">По цене</a></li>
-            <li><a class="sorting-marker" href="#">По типу</a></li>
-            <li><a class="sorting-marker" href="#">По рейтингу</a></li>
-            <li><a class="sorting-marker sorting-marker-up" href="#"></a></li>
-            <li><a class="sorting-marker sorting-marker-down sorting-marker-current" href="#"></a></li>
-          </ul>
-        </fieldset>
+        <div>
+          <b class="sorting-info">Найдено: 3</b>
+        </div>
+        <div>
+          <fieldset class="sorting-value">
+            <legend class="sorting-title">Сортировка:</legend>
+            <ul class="sorting-list">
+              <li><a class="sorting-marker sorting-marker-current">По цене</a></li>
+              <li><a class="sorting-marker" href="#">По типу</a></li>
+              <li><a class="sorting-marker" href="#">По рейтингу</a>></li>
+              <li><a class="sorting-marker sorting-marker-up" href="#"></a></li>
+              <li><a class="sorting-marker sorting-marker-down sorting-marker-current" href="#"></a></li>
+            </ul>
+          </fieldset>
+        </div>
       </div>
       <section class="catalog">
         <h2 class="visually-hidden">Список жилья по запросу</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
+            <div>
             <a class="catalog-item-image" href="#">
               <img src="img/hotels.jpg" width="135" height="90" alt="Гостиница">
             </a>
+          </div>
+          <div>
             <a class="catalog-item-title" href="#">
               <h3>Amara resort & spa</h3>
             </a>
@@ -113,13 +125,19 @@
             <b class="catalog-price">От 4000 р.</b>
             <a class="button moreinfo-button" href="#">Подробнее</a>
             <a class="button booking-button" href="#">Забронировать</a>
+          </div>
+          <div>
             <div class="catalog-star"></div>
             <b class="catalog-rating">Рейтинг: 8,5</b>
+          </div>
           </li>
           <li class="catalog-item">
+            <div>
             <a class="catalog-item-image" href="#">
               <img src="img/motels.jpg" width="135" height="90" alt="Мотель">
             </a>
+          </div>
+          <div>
             <a class="catalog-item-title" href="#">
               <h3>Desert quail inn</h3>
             </a>
@@ -129,11 +147,15 @@
             <a class="button booking-button" href="#">Забронировать</a>
             <div class="catalog-star"></div>
             <b class="catalog-rating">Рейтинг: 8,9</b>
+            </div>
           </li>
           <li class="catalog-item">
+            <div>
             <a class="catalog-item-image" href="#">
               <img src="img/aparts.jpg" width="135" height="90" alt="Апартаменты">
             </a>
+          </div>
+          <div>
             <a class="catalog-item-title" href="#">
               <h3>Villas at Poco Diablo</h3>
             </a>
@@ -142,12 +164,15 @@
             <a class="button moreinfo-button" href="#">Подробнее</a>
             <a class="button booking-button" href="#">Забронировать</a>
             <div class="catalog-star"></div>
+          </div>
+          <div>
             <b class="catalog-rating">Рейтинг: 9,2</b>
+          </div>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <p class="footer-hashtag container">#visitsedona</p>
       <div class="footer-social container">
         <ul class="social-list">
