@@ -45,8 +45,6 @@ a {
 }
 
 .main-page {
-
-
   background-image: url("../img/background-index.jpg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -98,9 +96,10 @@ a {
   text-align: center;
 }
 
-.feature-item {
-  text-align: center;
+.feature-list {
+  padding: 0;
   list-style: none;
+  text-align: center;
 }
 
 .feature-item h3 {
@@ -127,8 +126,10 @@ a {
   background-color: #81b3d2;
 }
 
-.advantage-item {
+.advantage-list {
+  padding: 0;
   list-style: none;
+  text-align: center;
 }
 
 .advantage-icon-1 {
@@ -147,6 +148,14 @@ a {
   background-image: url("../img/icon-3.svg");
   background-position: top center;
   background-repeat: no-repeat;
+}
+
+.feature-item-grey {
+  background-color: #eeeeee;
+}
+
+.feature-item-grey h3 {
+  background-color: #eeeeee;
 }
 
 .hotels-search {
@@ -409,8 +418,6 @@ a {
   background-color: #503e33;
 }
 
-
-
 .main-footer {
   text-align: center;
 }
@@ -490,12 +497,20 @@ a {
   margin: 0 auto;
 }
 
-.main-navigation {
+.main-page .main-navigation {
   display: flex;
 
   height: 56px;
   /*---отступ для фоновой картинки---*/
   margin-bottom: 570px;
+}
+
+.inner-page .main-navigation {
+  display: flex;
+
+  height: 56px;
+  /*---отступ для фоновой картинки---*/
+  margin-bottom: 0px;
 }
 
 .main-header-logo {
@@ -518,7 +533,8 @@ a {
   flex-direction: column;
   width: 1200px;
   margin: 0 auto;
-  border: 2px solid green;
+  padding: 0;
+  border: 1px solid green;
 }
 
 .main-title {
@@ -534,26 +550,64 @@ a {
   margin-right: auto;
 }
 
+.feature-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .feature-item {
   display: flex;
   flex-direction: row;
-  
-  width: 1000px;
-
-  border: 2px solid brown;
+  justify-content: center;
+  align-items: center;
+  /*border: 1px dashed red;*/
 }
 
 .feature-item-wide {
   width: 400px;
-  min-height: 256px;
+  height: 256px;
 }
 
 .feature-img {
+  height: 256px;
+}
 
+.feature-promo {
+  margin: 0 auto;
+  width: 304px;
 }
-/*
+
+.advantage-list {
+  display: flex;
+  flex-direction: row;
+}
+
 .advantage-item {
-  width: 400px;
-  border: 2px solid grey;
+  width: 400px;;
+  height: 256px;
 }
-*/
+
+.feature-item-grey {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  height: 256px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+}
+
+.filter-value {
+  border: 1px solid red;
+}
+
+
+
+.main-footer {
+  display: flex;
+  flex-direction: row;
+}
