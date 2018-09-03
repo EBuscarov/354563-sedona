@@ -120,7 +120,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-item h3 {
-  width: 152px;
+  width: 151px;
   margin: 0 auto;
   margin-top: 48px;
   margin-bottom: 24px;
@@ -147,7 +147,7 @@ input[type="radio"].visually-hidden {
 .feature-item-wide h3 {
   margin: 0 auto;
   margin-top: 48px;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
@@ -225,6 +225,9 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-item-grey h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
   background-color: #eeeeee;
 }
 
@@ -614,6 +617,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .feature-item {
@@ -624,10 +628,9 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-img {
-  display: block;
   margin: 0;
   padding: 0;
-  /*height: 256px*/
+  height: 256px
 }
 
 .feature-item-wide {
@@ -635,8 +638,9 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-item .feature-promo {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 302px;
 }
 
 .advantage-list {
@@ -652,6 +656,41 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
   min-width: 400px;
+  min-height: 256px;
+}
+
+.feature-item-grey .feature-promo {
+  width: 261px;
+}
+
+.hotels-search b {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.search-intro {
+  margin: 0 auto;
+  margin-bottom: 47px;
+  width: 435px;
+}
+
+.search-button {
+  padding: 30px 139px
+}
+
+.modal {
+  position: relative;
+}
+
+.modal-search-form {
+  position: absolute;
+
+  left: 315px;
+  width: 456px;
+  padding: 54px 56px;
+
+  background-color: #ffffff;
 }
 
 .filter {
