@@ -1,4 +1,5 @@
 body {
+  min-width: 1200px;
   margin: 0;
   padding: 0;
 
@@ -16,12 +17,26 @@ a {
     text-decoration: none;
 }
 
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: insert(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .button {
@@ -103,12 +118,20 @@ a {
 }
 
 .feature-item h3 {
+  max-width: 152px;
+  margin: 0 auto;
+  margin-top: 48px;
+  margin-bottom: 24px;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
   color: #000000;
 
   background-color: #ffffff;
+}
+
+.feature-item p {
+  margin-bottom: 22px;
 }
 
 .feature-item-wide {
@@ -127,27 +150,39 @@ a {
 }
 
 .advantage-list {
+  position: relative;
   padding: 0;
   list-style: none;
   text-align: center;
 }
 
 .advantage-icon-1 {
+  position: absolute;
   background-image: url("../img/icon-1.svg");
   background-position: top center;
   background-repeat: no-repeat;
+
 }
 
 .advantage-icon-2 {
+  position: absolute;
   background-image: url("../img/icon-2.svg");
   background-position: top center;
   background-repeat: no-repeat;
 }
 
 .advantage-icon-3 {
+  position: absolute;
   background-image: url("../img/icon-3.svg");
   background-position: top center;
   background-repeat: no-repeat;
+}
+
+.advantage-item h3 {
+  max-width: 152px;
+  margin: 0 auto;
+  margin-top: 162px;
+  margin-bottom: 24px;
 }
 
 .feature-item-grey {
@@ -450,26 +485,6 @@ a {
   fill: #818181;
 }
 
-/*
-.twitter-button {
-  background-image: url("../img/twitter.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.facebook-button {
-  background-image: url("../img/facebook.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.youtube-button {
-  background-image: url("../img/youtube.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-*/
-
 .footer-copyright p {
   font-size: 14px;
   line-height: 26px;
@@ -489,62 +504,75 @@ a {
   fill: #bdbbbc;
 }
 
+
 /*---Сеточные стили---*/
 
 .main-header {
-  width: 1200px;
-  min-height: 56px;
-  margin: 0 auto;
-}
-
-.main-page .main-navigation {
-  display: flex;
-
-  height: 56px;
   /*---отступ для фоновой картинки---*/
   margin-bottom: 570px;
 }
 
-.inner-page .main-navigation {
-  display: flex;
-
-  height: 56px;
+.inner-page .main-header {
   /*---отступ для фоновой картинки---*/
   margin-bottom: 0px;
 }
 
-.main-header-logo {
-  width: 140px;
-  height: 72px;
-}
+/*.main-page .main-navigation {
+  display: flex;
+}*/
+
+/*.inner-page .main-navigation {
+  display: flex;
+
+  height: 56px;
+}*/
+
+/*.main-navigation {
+  display: flex;
+}*/
 
 .site-navigation {
+  position: relative;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+
+  flex-wrap: wrap;
   width: 1200px;
-  height: 56px;
   margin: 0;
   padding: 0;
 }
 
+.site-navigation li {
+    padding: 15px 72px;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-left: 266px;
+}
+
 .container {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   width: 1200px;
   margin: 0 auto;
   padding: 0;
+}
+
+.main-header-logo {
+  position: absolute;
+  width: 140px;
+  height: 72px;
+  top: 0;
+  left: 530px;
 }
 
 .main-title {
   width: 576px;
   margin: 0 auto;
-  margin-bottom: 33px;
+  margin-bottom: 16px;
 }
 
 .feature-title {
   width: 576px;
-  margin-bottom: 51px;
+  margin-bottom: 52px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -560,7 +588,6 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /*border: 1px dashed red;*/
 }
 
 .feature-item-wide {
@@ -573,6 +600,7 @@ a {
 }
 
 .feature-promo {
+  width: 284px;
   margin: 0 auto;
   width: 304px;
 }
