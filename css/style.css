@@ -134,6 +134,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-item p {
+  margin: 0;
   margin-bottom: 20px;
 }
 
@@ -619,19 +620,23 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  min-height: 256px;
+
 }
 
 .feature-img {
-  width: 800px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  /*height: 256px*/
 }
 
 .feature-item-wide {
   width: 400px;
 }
 
-.feature-promo {
-  margin: 0 auto;
+.feature-item .feature-promo {
+  margin: 0;
+  padding: 0;
 }
 
 .advantage-list {
