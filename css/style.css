@@ -107,21 +107,24 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
+/*--<Блок преимуществ--*/
 .feature-title {
   text-align: center;
 }
 
 .feature-list {
+  margin: 0;
   padding: 0;
   list-style: none;
   text-align: center;
 }
 
 .feature-item h3 {
-  max-width: 152px;
+  width: 152px;
   margin: 0 auto;
   margin-top: 48px;
   margin-bottom: 24px;
+  padding: 0
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
@@ -131,7 +134,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-item p {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .feature-item-wide {
@@ -141,6 +144,9 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-item-wide h3 {
+  margin: 0 auto;
+  margin-top: 48px;
+  margin-bottom: 24px;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
@@ -150,39 +156,67 @@ input[type="radio"].visually-hidden {
 }
 
 .advantage-list {
-  position: relative;
   padding: 0;
   list-style: none;
   text-align: center;
 }
 
-.advantage-icon-1 {
+.advantage-item {
+  position: relative;
+  height: 332px;
+}
+
+.icon-lodging::before {
+  content: "";
+
   position: absolute;
+  width: 75px;
+  height: 72px;
+  top: 60px;
+  left: 162px;
   background-image: url("../img/icon-1.svg");
   background-position: top center;
   background-repeat: no-repeat;
-
 }
 
-.advantage-icon-2 {
+.icon-food::before {
+  content: "";
+
   position: absolute;
+  width: 74px;
+  height: 70px;
+  top: 62px;
+  left: 162px;
   background-image: url("../img/icon-2.svg");
   background-position: top center;
   background-repeat: no-repeat;
 }
 
-.advantage-icon-3 {
+.icon-suvenirs::before {
+  content: "";
+
   position: absolute;
+  width: 64px;
+  height: 76px;
+  top: 57px;
+  left: 167px;
   background-image: url("../img/icon-3.svg");
   background-position: top center;
   background-repeat: no-repeat;
 }
 
 .advantage-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
   max-width: 152px;
   margin: 0 auto;
   margin-top: 162px;
   margin-bottom: 24px;
+}
+
+.advantage-item p {
+  margin-bottom: 40px;
 }
 
 .feature-item-grey {
@@ -506,7 +540,6 @@ input[type="radio"].visually-hidden {
 
 
 /*---Сеточные стили---*/
-
 .main-header {
   /*---отступ для фоновой картинки---*/
   margin-bottom: 570px;
@@ -567,14 +600,13 @@ input[type="radio"].visually-hidden {
 .main-title {
   width: 576px;
   margin: 0 auto;
-  margin-bottom: 16px;
+  margin-bottom: 30px;
 }
 
 .feature-title {
   width: 576px;
+  margin: 0 auto;
   margin-bottom: 52px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .feature-list{
@@ -587,22 +619,19 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  min-height: 256px;
+}
+
+.feature-img {
+  width: 800px;
 }
 
 .feature-item-wide {
   width: 400px;
-  height: 256px;
-}
-
-.feature-img {
-  height: 256px;
 }
 
 .feature-promo {
-  width: 284px;
   margin: 0 auto;
-  width: 304px;
 }
 
 .advantage-list {
@@ -611,15 +640,13 @@ input[type="radio"].visually-hidden {
 }
 
 .advantage-item {
-  width: 400px;;
-  height: 256px;
+  min-width: 400px;
 }
 
 .feature-item-grey {
   display: flex;
   flex-direction: row;
-  width: 400px;
-  height: 256px;
+  min-width: 400px;
 }
 
 .filter {
