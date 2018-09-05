@@ -718,6 +718,10 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
 }
 
+.search-item button {
+  position: absolute;
+}
+
 label {
   position: relative;
   padding-top: 6px;
@@ -742,8 +746,8 @@ input[type="number"]::placeholder {
   width: 21px;
   height: 22px;
   background: red;
-  top: 0px;
-  left: 0px;
+  top: 9px;
+  left: 427px;
 }
 
 input[type="number"] {
@@ -778,6 +782,8 @@ input[type="number"] {
   display: block;
   /*height: 473px;*/
 }
+
+
 /*
 .filter {
   display: flex;
