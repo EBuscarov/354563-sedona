@@ -25,7 +25,7 @@ img {
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-
+  position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -38,6 +38,24 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+
+/*.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: insert(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}*/
 
 .button {
   font: inherit;
@@ -546,7 +564,7 @@ input[type="radio"].visually-hidden {
 /*---Сеточные стили---*/
 .main-header {
   /*---отступ для фоновой картинки---*/
-  margin-bottom: 570px;
+  margin-bottom: 568px;
 }
 
 .inner-page .main-header {
@@ -708,8 +726,9 @@ input[type="radio"].visually-hidden {
 }
 
 .search-item {
+  position: relative;
   margin: 0;
-  padding-bottom: 8px;
+  padding-bottom: 29px;
 }
 
 .search-item {
@@ -718,12 +737,16 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
 }
 
-.search-item button {
+.search-item .calendar-icon {
   position: absolute;
+  width: 21px;
+  height: 22px;
+  top: 7px;
+  left: 421px;
+  outline: none;
 }
 
 label {
-  position: relative;
   padding-top: 6px;
   padding-left: 0;
 }
@@ -741,21 +764,18 @@ input[type="number"]::placeholder {
   color: #000000;
 }
 
-.calendar-icon svg {
+/*.calendar-icon svg {
   position: absolute;
   width: 21px;
   height: 22px;
-  background: red;
   top: 9px;
   left: 427px;
-}
+}*/
 
-input[type="number"] {
-  width: 23px;
-  margin: 0;
-  padding: 6px 0;
-  padding-left: 15px;
-  border: 0;
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
 }
 
 .less-button,
@@ -768,10 +788,12 @@ input[type="number"] {
   margin-left: 41px;
 }
 
-.wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 46px;
+input[type="number"] {
+  width: 23px;
+  margin: 0;
+  padding: 6px 0;
+  padding-left: 15px;
+  border: 0;
 }
 
 .find-button {
@@ -780,7 +802,7 @@ input[type="number"] {
 
 .map-block img {
   display: block;
-  /*height: 473px;*/
+  margin-bottom: -120px;
 }
 
 
@@ -809,4 +831,61 @@ input[type="number"] {
 .main-footer {
   display: flex;
   flex-direction: row;
+  background-color: rgba(255,255,255,0.9);
+}
+
+.footer-hashtag {
+  padding-top: 45px;
+  max-width: 400px;
+}
+
+/*.social-list {
+  display: flex;
+  flex-direction: row;
+}*/
+
+.footer-social {
+  max-width: 400px;
+
+  text-align: center;
+  vertical-align: middle;
+}
+
+.footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  padding-top: 36px;
+  margin: 0 auto;
+  width: 150px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+
+  background-color: #81b3d2;
+}
+
+.social-button:hover {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+}
+
+.footer-copyright svg {
+  padding-top: 24px;
+  padding-left: 10px;
 }
