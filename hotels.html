@@ -10,11 +10,9 @@
   <body class="inner-page">
     <header class="main-header">
       <nav class="main-navigation">
-        <div class="container">
-          <a class="main-header-logo" href="index.html">
-            <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип город Седона">
-          </a>
-        </div>
+        <a class="main-header-logo" href="index.html">
+          <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип город Седона">
+        </a>
         <div class="container">
           <ul class="site-navigation">
             <li><a href="#">Информация</a></li>
@@ -25,31 +23,32 @@
         </div>
       </nav>
     </header>
+
     <main class="container">
       <h1 class="visually-hidden">Подбор жилья в Седоне</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-        <div class="wrapper">
+        <div class="wrap">
           <fieldset>
             <legend class="filter-title">Инфраструктура:</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" id="pool-checkbox" type="checkbox" name="checkbox-indicator" checked>
+                <input class="visually-hidden filter-input-checkbox" id="pool-checkbox" type="checkbox" name="checkbox-indicator" checked>
                 <label class="checked-indicator" for="pool-checkbox">Бассейн</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" id="parking-checkbox" type="checkbox" name="checkbox-indicator">
+                <input class="visually-hidden filter-input-checkbox" id="parking-checkbox" type="checkbox" name="checkbox-indicator">
                 <label class="checked-indicator" for="parking-checkbox">Парковка</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" id="wi-fi-checked" type="checkbox" name="checkbox-indicator" checked>
-                <label class="checked-indicator" for="wi-fi-checked">Wi-Fi</label>
+                <input class="visually-hidden filter-input-checkbox" id="wifi-checked" type="checkbox" name="checkbox-indicator" checked>
+                <label class="checked-indicator" for="wifi-checked">Wi-Fi</label>
               </li>
             </ul>
           </fieldset>
         </div>
-        <div class="wrapper">
+        <div class="wrap">
           <fieldset>
             <legend class="filter-title">Тип жилья:</legend>
             <ul>
@@ -68,25 +67,25 @@
             </ul>
           </fieldset>
         </div>
-        <div class="wrapper">
+        <div class="wrap">
           <fieldset class="filter-value">
-            <legend class="filter-title">Стомость сутки (р):</legend>
+            <legend class="filter-title value-title">Стомость сутки (р):</legend>
             <div class="filter-section">
-              <p class="filter-item">
-                <label for="min-value">От</label>
-                <input id="min-value" type="text" name="min" placeholder="0">
-              </p>
-              <p class="filter-item">
-                <label for="max-value">До</label>
-                <input id="max-value" type="text" name="max" placeholder="3000">
-              </p>
+              <label class="min-value">
+                От
+                <input type="text" name="min" value="0">
+              </label>
+              <label class="max-value">
+                До
+                <input id="max-value" type="text" name="max" value="3000">
+              </label>
             </div>
             <div class="filter-roller">
               <div class="filter-roller-inner">
                 <div class="filter-handle filter-handle-min"></div>
                 <div class="filter-handle filter-handle-max"></div>
-                <div class="wraper">
-                  <div class="filter-item-line"></div>
+                <div class="scale">
+                  <div class="bar"></div>
                 </div>
               </div>
             </div>
