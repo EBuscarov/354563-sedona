@@ -846,7 +846,7 @@ input[type="number"] {
 
 .footer-social {
   max-width: 400px;
-
+  min-height: 120px;
   text-align: center;
   vertical-align: middle;
 }
@@ -885,7 +885,12 @@ input[type="number"] {
   max-width: 400px;
 }
 
+.footer-copyright p {
+  padding-top: 31px;
+  padding-left: 2px;
+}
+
 .footer-copyright svg {
-  padding-top: 24px;
+  padding-top: 38px;
   padding-left: 10px;
 }
