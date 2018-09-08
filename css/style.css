@@ -1023,18 +1023,13 @@ input[type="number"] {
   flex-direction: column;
   margin: 0;
   padding: 0;
-  padding-left: 72px;
 }
 
 .catalog-item {
   display: flex;
   flex-direction: row;
-  /*outline: 1px solid red;*/
-}
+  padding-left: 72px;
 
-.catalog-list li {
-
-  padding-left: 0;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1049,14 +1044,8 @@ input[type="number"] {
   flex-grow: 1;
   flex-direction: row;
   justify-content: space-between;
-
-  outline: 1px solid blue;
 }
 
-.inner-description,
-.inner-rating {
-  outline: 1px solid blue;
-}
 
 .catalog-item-title h3 {
   margin: 0;
@@ -1077,6 +1066,8 @@ input[type="number"] {
 }
 
 .inner-rating {
+  display: flex;
+  flex-direction: column;
   margin-right: 71px;
 }
 
@@ -1094,16 +1085,13 @@ input[type="number"] {
   margin-right: 0;
   margin-left: 6px;
   background-image: url("../img/star.svg");
-  
 }
 
 .catalog-rating {
   display: inline-block;
-  text-align: center;
-  max-width: 110px;
   margin-top: 45px;
+  margin-left: auto;
   padding: 3px 14px;
-
 }
 
 .main-footer {
