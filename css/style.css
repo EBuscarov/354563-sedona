@@ -298,17 +298,17 @@ input[type="radio"].visually-hidden {
   outline : 2px solid #e5e5e5;
 }
 
-.calendar-icon svg {
+.calendar-icon {
   background-color: transparent;
   fill: #cacaca;
 }
 
-.calendar-icon:hover svg {
+.calendar-icon:hover {
   background-color: transparent;
   fill: #000000;
 }
 
-.calendar-icon:active svg {
+.calendar-icon:active {
   background-color: transparent;
   fill: #81b3d2;
 }
@@ -787,11 +787,11 @@ input[type="radio"].visually-hidden {
 
 .search-item .calendar-icon {
   position: absolute;
-  width: 21px;
-  height: 22px;
-  top: 7px;
+  /*width: 21px;
+  height: 22px;*/
+  top: 6px;
   left: 421px;
-  outline: none;
+  /*outline: 1px solid #f2f2f2;*/
 }
 
 label {
@@ -848,6 +848,10 @@ input[type="number"]::placeholder {
   margin-left: 41px;
 }
 
+.children .less-button {
+  margin-left: 25px;
+}
+
 input[type="number"] {
   width: 23px;
   margin: 0;
@@ -897,22 +901,25 @@ input[type="number"] {
   padding-left: 40px;
 }
 
-/*.filter-option::before {
-  content: "";
+.filter-checkbox {
+  position: relative;
+  cursor: pointer;
+}
+
+.filter-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+    outline: 2px solid #81b3d2;
+}
+
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 5px;
+  left: -40px;
   width: 27px;
   height: 23px;
 
   background-image: url("../img/checkbox-on.svg");
   background-position: left;
   background-repeat: no-repeat;
-}*/
-
-.filter-checkbox {
-  position: relative;
-  cursor: pointer;
 }
 
 .filter-checkbox input[type="checkbox"] + .checkbox-indicator {
@@ -927,14 +934,38 @@ input[type="number"] {
   background-repeat: no-repeat;
 }
 
-.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+.filter-checkbox input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
   top: 5px;
   left: -40px;
   width: 27px;
   height: 23px;
 
-  background-image: url("../img/checkbox-on.svg");
+  background-image: url("../img/checkbox-off.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.filter-checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
+  position: absolute;
+  top: 5px;
+  left: -40px;
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-disabled-off.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.filter-checkbox input[type="checkbox"]:checked:disabled + .checkbox-indicator {
+  position: absolute;
+  top: 5px;
+  left: -40px;
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-disabled-off.svg"), url("../img/checkbox-disabled-on.svg");
   background-position: left;
   background-repeat: no-repeat;
 }
