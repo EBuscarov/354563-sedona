@@ -61,8 +61,6 @@ input[type="radio"].visually-hidden {
 }
 
 .grey-back {
-  width: 1280px;
-  margin: 0 auto;
   background-color: #f2f2f2;
 }
 
@@ -80,7 +78,8 @@ input[type="radio"].visually-hidden {
 .main-header,
 .main-content,
 .main-footer {
-  box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
+          box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
 
 /*-- Навигация --*/
@@ -331,7 +330,7 @@ input[type="radio"].visually-hidden {
 .more-button:active {
   color: #81b3d2;
 
-  background-color: #f2f2f2;
+  background-color: #5496bd;
 }
 
 .find-button {
@@ -359,8 +358,8 @@ input[type="radio"].visually-hidden {
 }
 
 .filters {
-  min-height: 218px;
-  margin-bottom: 30px;
+  min-height: 217px;
+  margin-bottom: 29px;
 
   color: #ffffff;
   background-color: #457aa6;
@@ -752,7 +751,8 @@ input[type="radio"].visually-hidden {
 /*---Всплывающее окно---*/
 .modal {
   position: relative;
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.85);
+  -webkit-box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.85);
+          box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.85);
   /*display: none;*/
 }
 
@@ -790,8 +790,8 @@ input[type="radio"].visually-hidden {
   /*width: 21px;
   height: 22px;*/
   top: 6px;
-  left: 421px;
-  /*outline: 1px solid #f2f2f2;*/
+  right: 2px;
+  outline: none;
 }
 
 label {
@@ -1116,7 +1116,7 @@ input[type="number"] {
 }
 
 .sorting-title {
-  margin-top: 6px;
+  margin-top: 7px;
   margin-left: 48px;
 }
 
@@ -1129,7 +1129,7 @@ input[type="number"] {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 0;
-  margin-top: 6px;
+  margin-top: 7px;
   margin-left:
 }
 
@@ -1145,36 +1145,42 @@ input[type="number"] {
   margin-right: 476px;
 }
 
-.arrow {
+/*.arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   width: 11px;
   margin-right: 11px;
-}
-
+}*/
+/*
 .sorting-list .sorting-marker-up {
-  /*position: absolute;
-  bottom: 6px;*/
-  align-self: baseline;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
   border: 6px solid transparent;
   border-bottom: 10px solid #cacaca;
 }
 
 .sorting-list .sorting-marker-up:hover {
-  align-self: baseline;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
   border: 6px solid transparent;
   border-bottom: 10px solid #231f20;
 }
 
 .sorting-list .sorting-marker-up:active {
-  align-self: baseline;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
   border: 6px solid transparent;
   border-bottom: 10px solid #81b3d2;
 }
 
 .sorting-list .sorting-marker-up:checked {
-  align-self: baseline;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
   border: 6px solid transparent;
   border-bottom: 10px solid #81b3d2;
 }
@@ -1198,7 +1204,7 @@ input[type="number"] {
   border: 6px solid transparent;
   border-top: 10px solid #81b3d2;
 }
-
+*/
 .catalog-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1249,14 +1255,14 @@ input[type="number"] {
 
 .catalog-item-title h3 {
   margin: 0;
-  margin-top: 24px;
+  margin-top: 25px;
   margin-bottom: 7px;
 }
 
 .catalog-category {
   display: inline-block;
   width: 112px;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 }
 
 .moreinfo-button,
@@ -1291,7 +1297,7 @@ input[type="number"] {
 .star-current {
   width: 18px;
   height: 17px;
-  margin-top: 29px;
+  margin-top: 30px;
   margin-right: 0;
   margin-left: 6px;
   background-image: url("../img/star.svg");
@@ -1299,7 +1305,7 @@ input[type="number"] {
 
 .catalog-rating {
   display: inline-block;
-  margin-top: 45px;
+  margin-top: 47px;
   margin-left: auto;
   padding: 3px 14px;
 }
@@ -1317,7 +1323,7 @@ input[type="number"] {
 }
 
 .footer-hashtag {
-  padding-top: 45px;
+  padding-top: 47px;
   max-width: 400px;
 }
 
@@ -1343,7 +1349,7 @@ input[type="number"] {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0;
-  padding-top: 36px;
+  padding-top: 38px;
   margin: 0 auto;
   width: 150px;
 }
@@ -1383,11 +1389,11 @@ input[type="number"] {
 }
 
 .footer-copyright p {
-  padding-top: 31px;
+  padding-top: 33px;
   padding-left: 2px;
 }
 
 .footer-copyright svg {
-  padding-top: 38px;
-  padding-left: 10px;
+  padding-top: 40px;
+  padding-left: 7px;
 }
