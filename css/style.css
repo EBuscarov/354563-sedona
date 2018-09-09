@@ -457,7 +457,7 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-.sorting .sorting-marker-current {
+.current a {
   color: #81b3d2;
   border: none;
 }
@@ -1101,7 +1101,7 @@ input[type="number"] {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-bottom: 30px;
+  padding-bottom: 31px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1130,7 +1130,6 @@ input[type="number"] {
           flex-direction: row;
   margin: 0;
   margin-top: 7px;
-  margin-left:
 }
 
 .sorting-marker {
@@ -1142,7 +1141,7 @@ input[type="number"] {
 }
 
 .sorting-list li:nth-child(3) {
-  margin-right: 476px;
+  margin-right: 506px;
 }
 
 /*.arrow {
@@ -1156,55 +1155,67 @@ input[type="number"] {
   width: 11px;
   margin-right: 11px;
 }*/
-/*
+
 .sorting-list .sorting-marker-up {
-  -ms-flex-item-align: baseline;
-      align-self: baseline;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-right: 11px;
   border: 6px solid transparent;
+  border-top: 0px;
   border-bottom: 10px solid #cacaca;
+  cursor: pointer;
 }
 
 .sorting-list .sorting-marker-up:hover {
-  -ms-flex-item-align: baseline;
-      align-self: baseline;
+  -ms-flex-item-align: center;
+      align-self: center;
   border: 6px solid transparent;
+  border-top: 0px;
   border-bottom: 10px solid #231f20;
 }
 
 .sorting-list .sorting-marker-up:active {
-  -ms-flex-item-align: baseline;
-      align-self: baseline;
+  -ms-flex-item-align: center;
+      align-self: center;
   border: 6px solid transparent;
+  border-top: 0px;
   border-bottom: 10px solid #81b3d2;
 }
 
-.sorting-list .sorting-marker-up:checked {
-  -ms-flex-item-align: baseline;
-      align-self: baseline;
+/*.sorting-list .sorting-marker-up:checked {
+  -ms-flex-item-align: center;
+      align-self: center;
   border: 6px solid transparent;
+  border-top: 0px;
   border-bottom: 10px solid #81b3d2;
-}
-*/
+}*/
+
 .sorting-list .sorting-marker-down {
+  align-self: center;
   border: 6px solid transparent;
   border-top: 10px solid #cacaca;
+  border-bottom: -1px;
+  cursor: pointer;
 }
 
 .sorting-list .sorting-marker-down:hover {
   border: 6px solid transparent;
   border-top: 10px solid #231f20;
+  border-bottom: -1px;
 }
 
 .sorting-list .sorting-marker-down:active {
   border: 6px solid transparent;
   border-top: 10px solid #81b3d2;
+  border-bottom: -1px;
 }
 
-.arrow > .sorting-marker-current {
+.sorting-marker-down.current {
   border: 6px solid transparent;
   border-top: 10px solid #81b3d2;
+  border-bottom: -1px;
 }
-*/
+
 .catalog-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1349,7 +1360,7 @@ input[type="number"] {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0;
-  padding-top: 38px;
+  padding-top: 37px;
   margin: 0 auto;
   width: 150px;
 }
