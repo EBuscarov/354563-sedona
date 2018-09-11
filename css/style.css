@@ -599,13 +599,6 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.main-header {
-  /*---отступ для фоновой картинки---*/
-  background-image: url("../img/background-index.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-
 .inner-page .main-header {
   /*---отступ для фоновой картинки---*/
   margin-bottom: 0px;
@@ -624,12 +617,41 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation li {
-    padding: 15px 72px;
+  box-sizing: border-box;
+  width: 239px;
+  padding: 15px 0;
+  padding-left: 72px;
+  outline: 1px solid blue;
 }
 
 .site-navigation li:nth-child(3) {
-  margin-left: 261px;
+  margin-left: 244px;
 }
+
+/*.site-navigation li:nth-child(2) {
+  padding: 15px 0;
+  padding-left: 75px;
+  padding-right: 74px;
+}
+
+.site-navigation li:nth-child(3) {
+  padding: 15px 0;
+  padding-left: 89px;
+  padding-right: 72px;
+}
+
+.site-navigation li:nth-child(4) {
+  padding: 15px 0;
+  padding-right: 76px;
+}*/
+
+/*.left-item {
+  float: left;
+}
+
+.right-item {
+  float: right;
+}*/
 
 .main-header-logo {
   z-index: 1;
@@ -741,7 +763,7 @@ input[type="radio"].visually-hidden {
 .search-intro {
   margin: 0 auto;
   margin-bottom: 47px;
-  width: 435px;
+  width: 438px;
 }
 
 .search-button {
@@ -1118,6 +1140,9 @@ input[type="number"] {
 .sorting-title {
   margin-top: 7px;
   margin-left: 48px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
 }
 
 .sorting-list {
