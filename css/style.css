@@ -321,6 +321,9 @@ input[type="radio"].visually-hidden {
 
 .less-button,
 .more-button {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 700;
   color: #818181;
 
   background-color: #f2f2f2;
@@ -329,15 +332,19 @@ input[type="radio"].visually-hidden {
 .less-button:hover,
 .more-button:hover {
   color: #000000;
-
-  background-color: #f2f2f2;
+  background-color: #ebebeb
 }
 
 .less-button:active,
 .more-button:active {
   color: #81b3d2;
+  background-color: #ffffff;
+  outline : 2px solid #e5e5e5;
+}
 
-  background-color: #5496bd;
+.less-button:focus,
+.more-button:focus {
+  outline : 2px solid #e5e5e5;
 }
 
 .find-button {
@@ -835,6 +842,28 @@ input[type="radio"].visually-hidden {
   }
 }
 
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 /*---Всплывающее окно---*/
 .modal {
   position: relative;
@@ -843,11 +872,15 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-search-form {
-  animation: bounce 5s;
+  animation: bounce 0.5s;
 }
 
 .modal-none {
   display: none;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .search-form {
@@ -1084,8 +1117,6 @@ input[type="number"] {
   width: 314px;
   height: 32px;
   margin-bottom: 21px;
-
-  /*font-size: 0;*/
 
   border: 2px solid #ffffff;
   border-radius: 2px;

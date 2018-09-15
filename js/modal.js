@@ -18,6 +18,42 @@ try {
 search.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.toggle("modal-none");
+
+    if (storage) {
+      arrival.value = storage;
+      setTimeout(function() {
+	       departure.focus();
+       }, 1000);
+    } else {
+        setTimeout(function() {
+            arrival.focus();
+        }, 1000);
+      }
+});
+
+form.addEventListener("submit", function (evt) {
+  if (!arrival.value || !departure.value || !aduls.value || !childrens.value) {
+    evt.preventDefault();
+    popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("modal-error");
+  } else {
+    if (isStorageSupport) {
+      loaclaStorage.setItem("arrival", arrival.value);
+    } else {
+      if (isStorageSupport) {
+        loaclaStorage.setItem("arrival", departure.value);
+      } else {
+        if (isStorageSupport) {
+          loaclaStorage.setItem("arrival", aduls.value);
+        } else {
+          if (isStorageSupport) {
+            loaclaStorage.setItem("arrival", childrens.value);
+          }
+        }
+      }
+    }
+  }
 });
 
 window.addEventListener("keydown", function (evt) {
