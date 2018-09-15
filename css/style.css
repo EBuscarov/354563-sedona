@@ -639,7 +639,6 @@ input[type="radio"].visually-hidden {
   min-height: 56px;
   margin: 0 auto;
   padding: 0;
-  /*background-color: rgba(255, 255, 255, 0.9);*/
 }
 
 .inner-page .main-header {
@@ -729,7 +728,6 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /*min-height: 256px;*/
 }
 
 .feature-img {
