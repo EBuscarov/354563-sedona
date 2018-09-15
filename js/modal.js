@@ -2,34 +2,41 @@ var search = document.querySelector(".search-button");
 var popup = document.querySelector(".modal-search-form");
 var arrival = popup.querySelector("[name=arrival-date]");
 var departure = popup.querySelector("[name=departure-date]");
-var form = popup.querySelector("form");
 var aduls = popup.querySelector("[name=aduls]");
 var childrens = popup.querySelector("[name=childrens]");
+var form = popup.querySelector("form");
 
-var isStorageSupport = true;
-var storage = "";
+if (window.localStorage) {
+	var isStorageSupport = true;
+} else {
+	var isStorageSupport = false;
+}
 
-try {
-  storage = localStorage.getItem("arrival");
-} catch (err) {
-    isStorageSupport = false;
-  }
+if (isStorageSupport) {
+	arrival.value = localStorage.getItem("arrival");
+	departure.value = localStorage.getItem("departure");
+	aduls.value = localStorage.getItem("aduls");
+	childrens.value = localStorage.getItem("childrens");
+}
 
 search.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popup.classList.remove("modal-error");
     popup.classList.toggle("modal-none");
-
-    if (storage) {
-      arrival.value = storage;
-      setTimeout(function() {
-	       departure.focus();
-       }, 1000);
-    } else {
-        setTimeout(function() {
-            arrival.focus();
-        }, 1000);
-      }
+	if (arrival.value) {
+		if (departure.value) {
+			if (aduls.value) {
+				childrens.focus()
+			} else {
+				aduls.focus()
+			}
+		} else {
+			departure.focus()
+		}
+	} else {
+		setTimeout (function() {
+			arrival.focus();
+		}, 1000)
+	}
 });
 
 form.addEventListener("submit", function (evt) {
@@ -38,21 +45,11 @@ form.addEventListener("submit", function (evt) {
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
-  } else {
-    if (isStorageSupport) {
-      loaclaStorage.setItem("arrival", arrival.value);
-    } else {
-      if (isStorageSupport) {
-        loaclaStorage.setItem("departure", departure.value);
-      } else {
-        if (isStorageSupport) {
-          loaclaStorage.setItem("aduls", aduls.value);
-        } else {
-          if (isStorageSupport) {
-            loaclaStorage.setItem("childrens", childrens.value);
-          }
-        }
-      }
+    if(isStorageSupport){
+      localStorage.setItem("arrival", arrival.value);
+      localStorage.setItem("departure", departure.value);
+      localStorage.setItem("aduls", aduls.value);
+      localStorage.setItem("childrens", childrens.value);
     }
   }
 });
