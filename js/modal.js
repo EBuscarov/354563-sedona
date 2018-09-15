@@ -18,24 +18,6 @@ try {
 search.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.toggle("modal-none");
-
-    if (storage) {
-      arrival.value = storage;
-      departure.focus();
-    } else {
-        arrival.focus();
-      }
-});
-
-form.addEventListener("submit", function (evt) {
-  if (!arrival.value || !departure.value || !aduls.value || !childrens.value) {
-    evt.preventDefault();
-    console.log("input parametrs");
-  } else {
-    if (isStorageSupport) {
-      loaclaStorage.setItem("arrival", arrival.value);
-    }
-  }
 });
 
 window.addEventListener("keydown", function (evt) {
