@@ -17,6 +17,7 @@ try {
 
 search.addEventListener("click", function (evt) {
     evt.preventDefault();
+    popup.classList.remove("modal-error");
     popup.classList.toggle("modal-none");
 
     if (storage) {
@@ -42,13 +43,13 @@ form.addEventListener("submit", function (evt) {
       loaclaStorage.setItem("arrival", arrival.value);
     } else {
       if (isStorageSupport) {
-        loaclaStorage.setItem("arrival", departure.value);
+        loaclaStorage.setItem("departure", departure.value);
       } else {
         if (isStorageSupport) {
-          loaclaStorage.setItem("arrival", aduls.value);
+          loaclaStorage.setItem("aduls", aduls.value);
         } else {
           if (isStorageSupport) {
-            loaclaStorage.setItem("arrival", childrens.value);
+            loaclaStorage.setItem("childrens", childrens.value);
           }
         }
       }
