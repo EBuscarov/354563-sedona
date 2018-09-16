@@ -994,6 +994,8 @@ input[type="number"] {
 .map-block iframe {
   display: block;
   position: relative;
+  frameborder: 0;
+  border: none;
   z-index: 2;
 }
 
