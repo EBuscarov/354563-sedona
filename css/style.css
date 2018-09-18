@@ -654,7 +654,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 1200px;
+  max-width: 100%;;
   margin: 0;
   padding: 0;
 }
@@ -663,22 +663,16 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 20%;
-  padding: 15px 0;
+  padding: 15px 0px;
+  text-align: center;
 }
 
-.site-navigation li {
-  text-align: left;
-  padding-left: 72px;
-}
-
-.site-navigation li:last-of-type(n) {
+.site-navigation li:nth-child(2) {
   margin-right: 20%;
 }
 
-.site-navigation li:nth-child(4),
-.site-navigation li:nth-child(5) {
-  text-align: right;
-  padding-right: 72px;
+.site-navigation li:nth-child(6) {
+  margin-right: 20%;
 }
 
 .main-header-logo {
